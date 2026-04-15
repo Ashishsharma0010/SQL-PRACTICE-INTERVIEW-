@@ -21,3 +21,7 @@ ALTER TABLE table_name ADD email UNIQUE;
 q : Add a column gender after name.
 ALTER TABLE table_name ADD gender VARCHAR(20) AFTER name;
 
+Q :  Add a column is_passed (BOOLEAN) with default TRUE.
+ALTER TBALE table_name ADD is_passed BOOLEAN DEFAULT 'TRUE'.
+
+
