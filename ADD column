@@ -24,4 +24,14 @@ ALTER TABLE table_name ADD gender VARCHAR(20) AFTER name;
 Q :  Add a column is_passed (BOOLEAN) with default TRUE.
 ALTER TBALE table_name ADD is_passed BOOLEAN DEFAULT 'TRUE'.
 
+//Add a column updated_at that auto-updates on row update.
+To add a column updated_at that automatically updates whenever a row is modified, use:
+
+ALTER TABLE your_table_name
+ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ON UPDATE CURRENT_TIMESTAMP;
+What this does:
+DEFAULT CURRENT_TIMESTAMP → sets current time when row is created.
+ON UPDATE CURRENT_TIMESTAMP → automatically updates the timestamp whenever the row is updated.
+
 
