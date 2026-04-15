@@ -1,0 +1,8 @@
+ADD COLUMN PRACTISE
+Q : Add a column total_marks and set default as 500.'
+ALTER TABLE table_name ADD total_mark INT DEFAULT 500;
+
+Q : Add multiple columns:
+ address, pincode
+ALTER TABLE table_name ADD address VARCHAR(50), pincode INT;
+
