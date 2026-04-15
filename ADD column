@@ -6,3 +6,18 @@ Q : Add multiple columns:
  address, pincode
 ALTER TABLE table_name ADD address VARCHAR(50), pincode INT;
 
+Q : Add a column email of type VARCHAR(100).
+ALTER TABLE table_name ADD email VARCHAR(100);
+
+Q : Add a column phone of type BIGINT.
+ALTER TABLE Table_name ADD phone BIGINT;
+
+Q : Add a column status with default value 'active'
+ALTER TABLE table_name ADD status DEFAULT 'activer';
+
+Q : Add a column email that should be UNIQUE.
+ALTER TABLE table_name ADD email UNIQUE;
+
+q : Add a column gender after name.
+ALTER TABLE table_name ADD gender VARCHAR(20) AFTER name;
+
